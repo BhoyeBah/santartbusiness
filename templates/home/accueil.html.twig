@@ -1,0 +1,255 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+	<!-- header section ends -->
+
+	<!-- home section starts -->
+	<section class="home" id="home">
+		<div class="slider-container">
+			<div class="slider">
+				<div class="slide">
+					<div class="slide-content">
+						<div class="left-content">
+							<div class="text-content">
+								<h1>We Deliver Fresh</h1>
+								<h2>Groceries & Food</h2>
+								<h2>to Your <span class="highlight">Doorstep</span></h2>
+								<p>Ut tincidunt volutpat velit a condimentum. Vestibulum nec augue lacinia, placerat nibh in, luctus felis</p>
+								<button class="order-btn">Order Now</button>
+							</div>
+							<div class="overlay-image">
+								<img src="{{asset('assets/images/left-img.png')}}" alt="">
+							</div>
+						</div>
+						<div class="right-content">
+							<img src="{{asset('assets/images/home-right1.png')}}" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="slide-content">
+						<div class="left-content">
+							<div class="text-content">
+								<h1>We Deliver Fresh</h1>
+								<h2>Groceries & Food</h2>
+								<h2>to Your <span class="highlight">Doorstep</span></h2>
+								<p>Ut tincidunt volutpat velit a condimentum. Vestibulum nec augue lacinia, placerat nibh in, luctus felis</p>
+								<button class="order-btn">Order Now</button>
+							</div>
+							<div class="overlay-image">
+								<img src="{{asset('assets/images/left-img1.png')}}" alt="">
+							</div>
+						</div>
+						<div class="right-content">
+							<img src="{{asset('assets/images/home-right2.png')}}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- navigation arrows -->
+			<button class="nav-btn prev-btn">&lt;</button>
+			<button class="nav-btn next-btn">&gt;</button>
+		</div>
+	</section>
+	<!-- home section ends -->
+
+    <!-- banner section starts -->
+	<section class="banner-container">
+		<div class="banner">
+			<img src="{{asset('assets/images/banner1.png')}}" alt="">
+			<div class="content">
+				<span>limited sales</span>
+				<h3>vegetables</h3>
+				<a href="#" class="btn">shop now</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img src="{{asset('assets/images/banner2.png')}}" alt="">
+			<div class="content">
+				<span>limited sales</span>
+				<h3>fruits</h3>
+				<a href="#" class="btn">shop now</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img src="{{asset('assets/images/banner3.png')}}" alt="">
+			<div class="content">
+				<span>limited sales</span>
+				<h3>assorted</h3>
+				<a href="#" class="btn">shop now</a>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- banner section ends -->
+
+    <!-- products section starts -->
+	<section class="product" id="product">
+		<h1 class="heading"> our <span>products</span></h1>
+
+		<div class="box-container">
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/product-1.jpg')}}" alt="">
+				</div>
+				<div class="content">
+					<h3>fresh garden foods</h3>
+					<div class="price">$14.99</div>
+					<div class="stars">
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star-half-alt"></i>
+					</div>
+					<i class="fas fa-shopping-cart"></i>
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-eye"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/product-2.jpg')}}" alt="">
+				</div>
+				<div class="content">
+					<h3>fresh garden foods</h3>
+					<div class="price">$14.99</div>
+					<div class="stars">
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star-half-alt"></i>
+					</div>
+					<i class="fas fa-shopping-cart"></i>
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-eye"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/product-3.jpg')}}" alt="">
+				</div>
+				<div class="content">
+					<h3>fresh garden foods</h3>
+					<div class="price">$14.99</div>
+					<div class="stars">
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star-half-alt"></i>
+					</div>
+					<i class="fas fa-shopping-cart"></i>
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-eye"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/product-4.jpg')}}" alt="">
+				</div>
+				<div class="content">
+					<h3>fresh garden foods</h3>
+					<div class="price">$14.99</div>
+					<div class="stars">
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star"></i>
+						<i class="fas fas-star-half-alt"></i>
+					</div>
+					<i class="fas fa-shopping-cart"></i>
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-eye"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- products section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+            <h1 class="heading"><span>about </span> us </h1>
+            <div class="row">
+                <div class="content">
+                    <h3>we make organic food in market</h3>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam rem cupiditate sequi porro assumenda tenetur rerum modi, pariatur enim quis officiis nesciunt et</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam aut voluptatum ipsa dolorum.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+
+                <div class="image">
+                    <img src="{{asset('assets/images/about1.png')}}" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="{{asset('assets/images/about2.png')}}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- about section ends -->
+
+        <!-- blog -->
+	<section class="blog" id="blog">
+		<h1 class="heading">our <span> blog</span></h1>
+
+		<div class="box-container">
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/blog1.png')}}" alt="">
+				</div>
+				<div class="content">
+					<div class="icons">
+						<a href="#"><i class="fas fa-user"></i> by admin </a>
+					</div>
+					<h3>healthy vegetables to try</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates voluptatum magni similique beatae doloribus qui facilis officia.</p>
+					<a href="#" class="btn"> read more</a> 
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/blog2.png')}}" alt="">
+				</div>
+				<div class="content">
+					<div class="icons">
+						<a href="#"><i class="fas fa-user"></i> by admin </a>
+					</div>
+					<h3>healthy vegetables to try</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates voluptatum magni similique beatae doloribus qui facilis officia.</p>
+					<a href="#" class="btn"> read more</a> 
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="{{asset('assets/images/blog3.png')}}" alt="">
+				</div>
+				<div class="content">
+					<div class="icons">
+						<a href="#"><i class="fas fa-user"></i> by admin </a>
+					</div>
+					<h3>healthy vegetables to try</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates voluptatum magni similique beatae doloribus qui facilis officia.</p>
+					<a href="#" class="btn"> read more</a> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end -->
+
+{% endblock %}

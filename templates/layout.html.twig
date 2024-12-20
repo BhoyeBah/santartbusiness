@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sant'Art Bussiness</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+</head>
+<body>
+
+	<!-- header section starts -->
+	<!-- top header row -->
+	<header class="header">
+		<div class="header-top">
+			<div class="logo-container">
+				<img src="{{ asset('assets/images/logo.png')}}" alt="" class="logo-img">
+			</div>
+
+			<div class="search-container">
+				<input type="text" placeholder="Search products here..." class="search-input">
+				<button class="search-btn">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
+
+			<div class="account-container">
+				<div class="my-account">
+					<span>My Accounts</span>
+					<span class="login-text">Login Or Signup</span>
+				</div>
+				<div class="phone-number">
+					<i class="fas fa-phone"></i>
+					+8801303-23-434
+				</div>
+			</div>
+		</div>
+
+		<!-- bottom header -->
+		<div class="header-bottom">
+			<nav class="navbar">
+				<a href="#home" class="active">Accueil</a>
+				<a href="#product">Produit</a>
+				<a href="#about">A propos</a>
+				<a href="#review">Review</a>
+				<a href="#blog">Blog</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<div class="icons">
+				<div id="cart-btn" class="fas fa-shopping-cart"></div>
+				<div id="login-btn" class="fas fa-user"></div>
+				<div id="menu-btn" class="fas fa-bars"></div>
+			</div>
+		</div>
+
+		<!-- shopping cart -->
+		<div class="shopping-cart">
+			
+			<div class="box">
+				<i class="fas fa-times"></i>
+				<img src="{{ asset('assets/images/cart1.jpg')}}" alt="">
+				<div class="content">
+					<h3>side dish</h3>
+					<span class="price">$14.99</span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-times"></i>
+				<img src="{{ asset('assets/images/cart2.jpg')}}" alt="">
+				<div class="content">
+					<h3>side dish</h3>
+					<span class="price">$14.99</span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-times"></i>
+				<img src="{{ asset('assets/images/cart3.png')}}" alt="">
+				<div class="content">
+					<h3>side dish</h3>
+					<span class="price">$14.99</span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-times"></i>
+				<img src="{{ asset('assets/images/cart4.jpg')}}" alt="">
+				<div class="content">
+					<h3>side dish</h3>
+					<span class="price">$14.99</span>
+				</div>
+			</div>
+
+			<h3 class="total"> total: <span>$56.89</span></h3>
+			<a href="#" class="btn">checkout</a>
+		</div>
+
+		<!-- login -->
+		<form action="" class="login-form">
+			<h3>login form</h3>
+
+			<input type="email" placeholder="enter your email" class="box">
+			<input type="password" placeholder="enter your password" class="box">
+
+			<div class="remember">
+				<input type="checkbox" name="" id="remember-me">
+				<label for="remember-me">remember me</label>
+			</div>
+			<a href="#" class="btn"> login </a>
+			
+		</form>
+
+	</header>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+
+	<!-- footer -->
+	<section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>find us here</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus praesentium.</p>
+				<div class="share">
+					<a href="#" class="fab fa-facebook"></a>
+					<a href="#" class="fab fa-twitter"></a>
+					<a href="#" class="fab fa-instagram"></a>
+					<a href="#" class="fab fa-linkedin"></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<h3>contact us</h3>
+				<p>+1 205 344 1212</p>
+				<a href="#" class="link">grshop@gmail.com</a>
+			</div>
+
+			<div class="box">
+				<h3>localization</h3>
+				<p>123 Maple Avenue <br>
+					Seattle, Washington <br>
+					United States.
+				</p>
+			</div>
+		</div>
+
+		<div class="credit">created by <span> coding with nyemmal</span> | all rights reserved!</div>
+	</section>
+
+	<!-- header section ends -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="{{asset('assets/js/script.js')}}"></script>
+
+</body>
+</html>
