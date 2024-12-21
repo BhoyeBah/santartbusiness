@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-  --primary-color: #3bb77e;
+  --primary-color: #0D92F4;
   --secondary :#ffba43;
   --bg: #e2f9ee;
   --black: #1c2137;
@@ -170,7 +170,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .header .header-bottom .navbar a.active {
-    background-color: #00A650;  /* Green background */
+    background-color: #0D92F4;  /* Green background */
     color: white;  /* White text for better contrast */
 }
 
@@ -435,7 +435,7 @@ html::-webkit-scrollbar-thumb{
 
 /* Home section styles */
 .home {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     position: relative;
     background: #fff;
@@ -596,7 +596,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .home {
-    height: 87vh;
+    height: 70vh;
     width: 100%;
     position: relative;
     background: #fff;
@@ -662,7 +662,7 @@ html::-webkit-scrollbar-thumb{
 .home .order-btn {
     padding: 1.2rem 2.5rem;
     font-size: 1.6rem;
-    background: #00A650;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 4px;
