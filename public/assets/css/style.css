@@ -17,6 +17,7 @@
   text-transform: capitalize;
   text-decoration: none;
   transition: .2s linear;
+  list-style: none;
 }
 
 html{
@@ -1227,75 +1228,110 @@ html::-webkit-scrollbar-thumb{
   height: 15rem;
 }
 
-/* end */
-
-/* footer */
-
-.footer{
-  background: var(--bg);
+.footer {
+  background: var(--primary-color);
   text-align: center;
   padding: 2rem 7%;
 }
 
-.footer .box-container{
+.footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
 
-.footer .box-container .box h3{
+.footer .box h3 {
   font-size: 2.2rem;
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: var(--white);
   padding: 1rem 0;
 }
 
-.footer .box-container .box p{
+.footer .box p {
   font-size: 1.5rem;
-  line-height: 2;
-  color: var(--black);
-  padding: 1rem 0;
+  line-height: 1.8;
+  color: var(--white);
+  margin-bottom: 1rem;
 }
 
-.footer .box-container .box .share{
+.footer .box .share {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.footer .box-container .box .share a{
+.footer .box .share a {
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
-  border-radius: 10%;
+  border-radius: 50%;
   font-size: 1.7rem;
-  background: var(--primary-color);
-  color: var(--white);
-  margin-right: .3rem;
-  text-align: center;
-}
-
-.footer .box-container .box .share a:hover{
-  background: var(--secondary);
-}
-
-.footer .box-container .box .link{
-  font-size: 1.7rem;
-  line-height: 2;
+  background: var(--white);
   color: var(--primary-color);
-  padding: .5rem 0;
-  display: block;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
 }
 
-.footer .box-container .box .link:hover{
+.footer .box .share a:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.footer .box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .box ul li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.footer .box ul li a {
+  font-size: 1.7rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer .box ul li a:hover {
   color: var(--secondary);
 }
 
+.footer .box.pages ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer .box.pages ul li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--secondary);
+}
+
+.footer .credit {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  color: var(--white);
+  border-top: 1px solid var(--black);
+}
+
+.footer .credit span {
+  color: var(--secondary);
+}
 .footer .credit{
   text-align: center;
   margin-top: 3rem;
   padding-top: 3rem;
   font-size: 2rem;
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: var(--white);
   border-top: .1rem solid var(--black);
 }
 
