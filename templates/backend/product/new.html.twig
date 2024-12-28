@@ -1,0 +1,12 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}New Product{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="page-inner">
+        <div>
+            {{ include('backend/product/_form.html.twig') }}
+        </div>
+    </div>
+    {% endblock %}
