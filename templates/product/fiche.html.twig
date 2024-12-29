@@ -14,7 +14,7 @@
                 <span class="d-block mb-3">{{ product.price }} FCFA</span>
                 {{ product.description|raw }}
                 <div class="d-flex align-items-center justify-content-between mt-3">
-                    <a href="" class="btn btn-success w-100">Ajouter au panier</a>
+                    <a href="{{ path('app_cart_add', {'id': product.id } ) }}" class="btn btn-success w-100">Ajouter au panier</a>
                 </div>
 
                 <div class="collapse" id="collapseExample">
