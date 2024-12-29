@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Categorie</h1>
+<p>Cette catégorie {{product.name }}</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <img src="/uploads/products/{{product.image }}" alt="" class="img-fluid">
+            <h3>{{ product.name }}</h3>
+            <div class="text">
+                <p>{{ product.description }}</p>
+                <span>{{product.price}} FCFA</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

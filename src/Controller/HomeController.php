@@ -35,19 +35,6 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/produit/{slug}', name: 'app_product')]
-    public function detailProduct($slug, ProductRepository $productRepository): Response
-    {
-        
-      
-        $product = $productRepository->findOneBySlug($slug);
-        
-        dd($product);
-        return $this->render('home/fiche.html.twig', [
-            'product' => $product,
-        ]);
-    }
-
 
     #[Route('/blog', name: 'app_blog')]
     public function blog(): Response
