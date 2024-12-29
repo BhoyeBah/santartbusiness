@@ -1,18 +1,33 @@
 {% extends 'base.html.twig' %}
+
 {% block body %}
-<h1>Categorie</h1>
-<p>Cette catégorie {{product.name }}</p>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3">
-            <img src="/uploads/products/{{product.image }}" alt="" class="img-fluid">
-            <h3>{{ product.name }}</h3>
-            <div class="text">
-                <p>{{ product.description }}</p>
-                <span>{{product.price}} FCFA</span>
+
+    <div class="container my-5">
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/uploads/products/{{ product.image }}" class="img-fluid" alt="{{ product.name }}">
+            </div>
+            <div class="col-md-6">
+                <small><i><a href="{{ path('app_category', { slug : product.category.slug } ) }}">{{ product.category.name }}</a> > {{ product.name }}</i></small>
+                <h1>{{ product.name }}</h1>
+                <span class="d-block mb-3">{{ product.price }} FCFA</span>
+                {{ product.description|raw }}
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <a href="" class="btn btn-success w-100">Ajouter au panier</a>
+                </div>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="mt-2">
+                        Pour utiliser les avantages de la Wishlist, <a href="">connectez-vous</a> ou <a href="">créez votre compte</a> client.
+                    </div>
+                </div>
+
+
             </div>
         </div>
+
     </div>
-</div>
 
 {% endblock %}
+
