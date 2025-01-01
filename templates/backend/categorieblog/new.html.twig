@@ -1,11 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'admin.html.twig' %}
 
-{% block title %}New Categorieblog{% endblock %}
 
 {% block body %}
-    <h1>Create new Categorieblog</h1>
+    <h1>Create new Category</h1>
 
     {{ include('backend/categorieblog/_form.html.twig') }}
 
-    <a href="{{ path('app_categorieblog_index') }}">back to list</a>
 {% endblock %}
