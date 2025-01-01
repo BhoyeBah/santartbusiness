@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\ProductRepository;
+use App\Service\Cart;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -10,10 +11,13 @@ use Symfony\Component\Routing\Attribute\Route;
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(ProductRepository $productRepository): Response
+    public function index(ProductRepository $productRepository, Cart $cart): Response
     {
         $product = $productRepository->findAll();
         return $this->render('home/accueil.html.twig', [
+            'cart' => $cart->getCart(),
+            'total' => $cart->getTotalWt(),
+            'fullQuantity' => $cart->fullQuantity(),
             'product' => $product,
         ]);
     }

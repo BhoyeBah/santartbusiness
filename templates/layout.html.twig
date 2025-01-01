@@ -58,44 +58,26 @@
 
 		<!-- shopping cart -->
 		<div class="shopping-cart">
+		{% for product in cart %}
+			<div class="box">
+				<i class="fas fa-times"></i>
+				<img src="/uploads/products/{{ product.objet.image }}" alt="{{ product.objet.name }}">
+				<div class="content">
+					<h3>{{ product.objet.name }}</h3>
+					<span class="price">{{ (product.qty * product.objet.price)|number_format('0','', ' ')}} CFA</span>
+					<div class="col-md-2 text-right">
+                        <a href="{{ path('app_cart_decrease', {'id': product.objet.id }) }}">-</a> <span class="badge text-bg-secondary">x{{ product.qty }}</span> <a href="{{ path('app_cart_add', { id : product.objet.id } ) }}">+</a>
+                        </div>
+                        <div class="col-md-2">
+                            <strong>{{ (product.qty * product.objet.price) }}</strong>
+                        </div>
+				</div>
+			</div>
+
+			{% endfor %}
 			
-			<div class="box">
-				<i class="fas fa-times"></i>
-				<img src="{{ asset('assets/images/cart1.jpg')}}" alt="">
-				<div class="content">
-					<h3>side dish</h3>
-					<span class="price">$14.99</span>
-				</div>
-			</div>
 
-			<div class="box">
-				<i class="fas fa-times"></i>
-				<img src="{{ asset('assets/images/cart2.jpg')}}" alt="">
-				<div class="content">
-					<h3>side dish</h3>
-					<span class="price">$14.99</span>
-				</div>
-			</div>
-
-			<div class="box">
-				<i class="fas fa-times"></i>
-				<img src="{{ asset('assets/images/cart3.png')}}" alt="">
-				<div class="content">
-					<h3>side dish</h3>
-					<span class="price">$14.99</span>
-				</div>
-			</div>
-
-			<div class="box">
-				<i class="fas fa-times"></i>
-				<img src="{{ asset('assets/images/cart4.jpg')}}" alt="">
-				<div class="content">
-					<h3>side dish</h3>
-					<span class="price">$14.99</span>
-				</div>
-			</div>
-
-			<h3 class="total"> total: <span>$56.89</span></h3>
+			<h3 class="total"> total: <span>{{ total }} FCFA</span></h3>
 			<a href="#" class="btn">Pannier</a>
 		</div>
 
