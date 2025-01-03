@@ -74,21 +74,15 @@
         <div class="sidebar-wrapper scrollbar scrollbar-inner">
           <div class="sidebar-content">
             <ul class="nav nav-secondary">
-              <li class="nav-item active">
-                <a
-                  data-bs-toggle="collapse"
-                  href="#dashboard"
-                  class="collapsed"
-                  aria-expanded="false"
-                >
+              <li class="nav-item {% block home%} {% endblock %}">
+                <a href="{{ path('app_dashboard') }}" class="collapsed" aria-expanded="false">
                   <i class="fas fa-home"></i>
                   <p>Dashboard</p>
-                  <span class="caret"></span>
                 </a>
                 <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="../demo1/index.html">
+                      <a href="{{ path('app_dashboard') }}">
                         <span class="sub-item">Dashboard 1</span>
                       </a>
                     </li>
@@ -99,9 +93,9 @@
                 <span class="sidebar-mini-icon">
                   <i class="fa fa-ellipsis-h"></i>
                 </span>
-                <h4 class="text-section">Components</h4>
+                <h4 class="text-section">Application</h4>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {% block Ecommerce %}{% endblock %}">
                 <a data-bs-toggle="collapse" href="#base">
                   <i class="fas fa-layer-group"></i>
                   <p>E-COMMERCE</p>
@@ -109,12 +103,12 @@
                 </a>
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
-                    <li>
+                    <li class="{% block categorie_index %} {% endblock %}">
                       <a href="{{ path('app_category_index') }}">
                         <span class="sub-item">Catégorie</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="{% block product_index %} {% endblock %}">
                       <a href="{{ path('app_product_index') }}">
                         <span class="sub-item">Produit</span>
                       </a>
@@ -123,7 +117,7 @@
                 </div>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item {% block Blog %} {% endblock %}">
                 <a data-bs-toggle="collapse" href="#base">
                   <i class="fas fa-layer-group"></i>
                   <p>Blog</p>
@@ -131,12 +125,12 @@
                 </a>
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
-                    <li>
+                    <li class="{% block blog_index %} {% endblock %}">
                       <a href="{{ path('app_categorieblog_index') }}">
                         <span class="sub-item">Catégorie</span>
                       </a>
                     </li>
-                    <li>
+                    <li class="{% block app_article_index %} {% endblock %}">
                       <a href="{{ path('app_article_index') }}">
                         <span class="sub-item">Article</span>
                       </a>
